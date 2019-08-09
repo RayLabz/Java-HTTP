@@ -4,8 +4,17 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.Map;
 
+/**
+ * A utility class which creates query strings.
+ */
 public class QueryStringMaker {
 
+    /**
+     * Creates a query string given a map of parameters.
+     * @param params The set of parameters to convert into a query string.
+     * @return Returns a query-formatted String.
+     * @throws UnsupportedEncodingException
+     */
     public static String makeQueryString(Map<String, String> params) throws UnsupportedEncodingException {
         StringBuilder result = new StringBuilder();
         for (Map.Entry<String, String> entry : params.entrySet()) {

@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f4544c9-ffcf-4bf5-bf5f-2a6f7839f480" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Example.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/Test/Test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/Test/src/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/src/com/panickapps/javahttp/HTTPRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/src/com/panickapps/javahttp/HTTPRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/src/com/panickapps/javahttp/HTTPResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/src/com/panickapps/javahttp/HTTPResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/src/com/panickapps/javahttp/MimeType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/src/com/panickapps/javahttp/MimeType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/src/com/panickapps/javahttp/QueryStringMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/src/com/panickapps/javahttp/QueryStringMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/src/com/panickapps/javahttp/RequestMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/src/com/panickapps/javahttp/RequestMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/src/Example.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+              <caret line="16" column="66" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="16" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,9 +85,16 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Source/out/artifacts/Java_HTTP_jar/Java-HTTP.jar!/" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -139,12 +138,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565428803028</updated>
-      <workItem from="1565428804509" duration="1020000" />
+      <workItem from="1565428804509" duration="2946000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1020000" />
+    <option name="totallyTimeSpent" value="2946000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -192,7 +191,7 @@
     <entry file="file://$PROJECT_DIR$/src/Example.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <caret line="16" column="66" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="16" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -31,12 +31,15 @@
                 <h5 class="header col s12 light">A Java utility library that makes HTTP requests easier to work with.</h5>
             </div>
             <div class="row center">
-                <a href="" id="download-button"> <!--TODO-->
+                <a href="https://github.com/panickapps/Java-HTTP/blob/master/Downloads/Java-HTTP.jar" id="download-button"
                    class="btn-large waves-effect waves-light lime darken-2">Download</a>
             </div>
 
             <p class="justify">
-                <!--TODO-->
+                The Java HTTP library simplifies the execution of HTTP requests in Java through standardization. It allows you
+                to quickly build a request using a builder pattern, add parameters, execute the request and receive a response and its data.
+                While standardizing the aspects of HTTP requests, the library still maintains some versatility, allowing you to
+                a) define request headers and read response headers and b) define request timeouts.
             </p>
 
             <p><b>The package requires Java 8+</b></p>
@@ -52,6 +55,9 @@
                      <li><a href="#httpget">Making an HTTP GET request</a></li>
                      <li><a href="#response">Getting the response</a></li>
                      <li><a href="#httppost">Making an HTTP POST request</a></li>
+                     <li><a href="#headers">Adding request headers</a></li>
+                     <li><a href="#mime">MIME types</a></li>
+                     <li><a href="#timeouts">Timeouts</a></li>
                  </ul>
                  </li>
                 <li><a href="#example">Full example</a></li>
@@ -65,124 +71,92 @@
             <h5 id="downloadAndImport">Download and import</h5>
 
             <p>
-                You can download AsyncTask for plain Java <a href="https://github.com/panickapps/Java-AsyncTask/blob/master/Downloads/AsyncTask.jar">here</a>.
+                You can download Java-HTTP <a href="https://github.com/panickapps/Java-HTTP/blob/master/Downloads/Java-HTTP.jar">here</a>.
                 Then import it in your project as a Java library (.jar).
             </p>
 
-            <h5 id="createAsyncTask">Creating an AsyncTask</h5>
+            <h5 id="httpget">Making an HTTP GET request</h5>
 
             <p>
-                AsyncTask for Java is a simplified port of the Android SDK's version of AsyncTask. While it is designed to
-                be very similar in use, it omits some functionality which is not frequently used. From this point, we are assuming
-                that you already known the basics of AsyncTask usage from the Android SDK. Otherwise, you can
-                <a href="https://alvinalexander.com/android/asynctask-examples-parameters-callbacks-executing-canceling">refer to this guide</a>
-                by Alvin Alexander to learn how it works.
-                You can use AsyncTask by creating a new class that extends the AsyncTask class:
+                You can make a GET request, add parameters, execute it and receive the response by simply using:
             </p>
 
             <pre class="prettyprint java">
-public class MyAsyncTask extends AsyncTask&lt;Void, Void, Void&gt; {
-    ...
-}</pre>
+HTTPResponse response = new HTTPRequest.Builder("http://www.example.com/api/endpoint", RequestMethod.GET)
+    .addParam("myParam", "myValue") //Add parameter(s)
+    .build() //Build the request
+    .call(); //Make the call</pre>
 
-            <p>Note that the AsyncTask class takes three templated type arguments just like the Android AsyncTask, which are:</p>
+            <h5 id="response">Getting the response</h5>
 
-            <ul class="browser-default">
-                <li>Parameter type</li>
-                <li>Progress type</li>
-                <li>Result type</li>
-            </ul>
-
-            <h5 id="implementMethods">Implementing the methods</h5>
-
-            <p>You can freely define your own methods and attributes in any subclass you create. However, you MUST
-                implement the following three methods provided by the base class:</p>
-
-            <ul class="browser-default">
-                <li>onPreExecute()</li>
-                <li>doInBackground()</li>
-                <li>onPostExecute()</li>
-            </ul>
-
-            <h6 id="onpreexecute">onPreExecute()</h6>
-
-            <p>
-                The onPreExecute() method executes code <i>on the UI thread</i>. It is usually used to prepare workload for execution
-                while still being able to access the UI thread. An example would be URL sanitization, and initialization
-                of certain UI elements. The following code shows an example implementation of the onPreExecute() method that prints
-                a message on the console:
-            </p>
+            <p>You can get the response data of a call by using the response object:</p>
 
             <pre class="prettyprint java">
-@Override
-protected void onPreExecute() {
-    System.out.println("OnPreExecute" + System.lineSeparator());
-}</pre>
+//Get the response data:
+System.out.println("Response code: " + response.getStatus()); //Fetch the response code/status
+System.out.println("Response content: " + response.getContent()); //Fetch the response content (body)
+System.out.println("Response header field 'Content-Type': " + response.getHeaderField("Content-Type").get(0));</pre>
 
-            <h6 id="doinbackground">doInBackground()</h6>
-
-            <p>
-                The doInBackground() method executes code <i>on a non-UI thread</i> - this is done to prevent the UI from
-            freezing during long operations such as database queries, HTTP calls or file reads. The code below shows an example where
-                numbers between 0 and 1,000,000 are printed on the screen - a long operation that would stall the application.
-                This method receives a set of parameters and returns a result.
-            </p>
-
-            <pre class="prettyprint java">
-@Override
-protected Void doInBackground(Void... voids) {
-    for (long i = 0; i < 1000000; i++) {
-        System.out.println(i + System.lineSeparator());
-    }
-    return null;
-}</pre>
-
-            <h6 id="onpostexecute">onPostExecute()</h6>
+            <h5 id="httppost">Making an HTTP POST request</h5>
 
             <p>
-                The onPostExecute() method executes code <i>on the UI thread</i> and receives the result of the doInBackground() method.
-            </p>
-
-            <pre class="prettyprint java">
-@Override
-protected void onPostExecute(Void aVoid) {
-    System.out.println("OnPostExecute" + System.lineSeparator());
-}</pre>
-
-            <h5 id="progressUpdates">Progress updates</h5>
-
-            <p>
-                You can update the progress indication on the UI while the task is running by using the methods <span class="code">publishProgress()</span>
-                and <span class="code">onProgressUpdate()</span>. The <span class="code">publishProgress()</span> method is used within doInBackground() to
-                publish a set of Progress objects. Calling this method automatically invokes <span class="code">onProgressUpdate()</span> on the UI thread,
-                which you need to implement. <span class="code">onProgressUpdate()</span> can be used to update the UI by using the progress provided by
-                <span class="code">publishProgress()</span>. The code below shows how to implement the <span class="code">onProgressUpdate() method </span>
-                and how to call the <span class="code">publishProgress()</span> in doInBackground():
+                Alternatively, you can also make and execute a POST request, simply by changing the RequestMethod:
             </p>
 
             <pre class="prettyprint">
-@Override
-protected void onProgressUpdate(Integer... integers) {
-    super.onProgressUpdate(integers);
-    System.out.println(integers[0] + System.lineSeparator());
-}
+//Perform a POST HTTP request:
+HTTPResponse response2 = new HTTPRequest.Builder("http://www.example.com/api/endpoint", <mark>RequestMethod.POST</mark>)
+    .addParam("myParam", "myValue") //Add parameter(s)
+    .build() //Build the request
+    .call(); //Make the call</pre>
 
-...
+            <h5 id="headers">Defining request headers</h5>
 
-@Override
-protected Void doInBackground(Void... voids) {
-    for (long i = 0; i < 1000000; i++) {
-        stringBuilder.append("[" + name + "] -> " + i + System.lineSeparator());
-        if (i % 100000 == 0) {
-            <mark>publishProgress((int) i);</mark>
-        }
-    }
-    return null;
-}</pre>
+            <p>
+                You can define a header for your request using the <span class="code">setRequestProperty()</span> method:
+            </p>
+
+            <pre class="prettyprint">
+HTTPResponse response = new HTTPRequest.Builder("http://www.example.com/api/endpoint", RequestMethod.GET)
+    .addParam("myParam", "myValue") //Add parameter(s)
+    <mark>.setRequestProperty("User-Agent", "Java")</mark>
+    .build() //Build the request
+    .call(); //Make the call</pre>
+
+            <h5 id="mime">MIME types</h5>
+
+            <p>
+                You can quickly define a frequently used MIME type for your request using the <span class="code">setMimeType()</span> method:
+            </p>
+
+            <pre class="prettyprint">
+HTTPResponse response = new HTTPRequest.Builder("http://www.example.com/api/endpoint", RequestMethod.GET)
+    .addParam("myParam", "myValue") //Add parameter(s)
+    <mark>.setMimeType(MimeType.CONTENT_TYPE_JSON)</mark>
+    .build() //Build the request
+    .call(); //Make the call</pre>
+
+            <p>
+                Alternatively, if the MIME type you want does not exist as a MimeType, you can use the <span class="code">setCustomMimeType()</span> method
+                to set the type as a string:
+            </p>
+
+            <pre class="prettyprint">.setCustomMimeType("text/*")</pre>
+
+            <h5 id="timeouts">Timeouts</h5>
+
+            <p>
+                You can define the connection timeout and data read timeout limits using the <span class="code">setConnectTimeout()</span> and
+                <span class="code">setReadTimeout()</span> methods:
+            </p>
+
+            <pre class="prettyprint">
+.setConnectTimeout(20000) //Set the connection timeout
+.setReadTimeout(15000) //Set the data read timeout</pre>
 
             <h4 id="example">Full example</h4>
 
-            <p>Please see the <a href="https://github.com/panickapps/Java-AsyncTask/tree/master/Source/Test/">complete example here.</a></p>
+            <p>Please see the <a href="https://github.com/panickapps/Java-HTTP/tree/master/Example">complete example here.</a></p>
 
             <h4 id="documentation">Documentation</h4>
 
@@ -191,18 +165,18 @@ protected Void doInBackground(Void... voids) {
             <h4 id="usage">License</h4>
 
             <p>
-                AsyncTask for plain Java is released under the <a href="https://github.com/panickapps/Java-AsyncTask/blob/master/LICENSE">Apache 2.0 license</a>.
+                Java-HTTP is released under the <a href="https://github.com/panickapps/Java-HTTP/blob/master/LICENSE">Apache 2.0 license</a>.
             </p>
 
             <h4 id="source">Source code</h4>
 
             <p>
-                You can find the source code at the project's repository <a href="https://github.com/panickapps/Java-AsyncTask/">here</a>.
+                You can find the source code at the project's repository <a href="https://github.com/panickapps/Java-HTTP/">here</a>.
             </p>
 
             <h4 id="bugreport">Bug reporting</h4>
 
-            <p>Please report bugs <a href="mailto:panickapps@gmail.com?subject=AsyncTask for plain Java">here</a>.</p>
+            <p>Please report bugs <a href="mailto:panickapps@gmail.com?subject=Java-HTTP">here</a>.</p>
 
             <br/><br/>
         </div>
@@ -210,9 +184,9 @@ protected Void doInBackground(Void... voids) {
 
 </main>
 
-<footer class="page-footer purple darken-2">
+<footer class="page-footer lime">
         <div class="container">
-            <div class="center light">Made by <a class="orange-text text-lighten-3" href="http://www.panickapps.com">PaNickApps</a></div>
+            <div class="center light">Made by <a class="black-text" href="http://www.panickapps.com">PaNickApps</a></div>
             <br/>
         </div>
 </footer>

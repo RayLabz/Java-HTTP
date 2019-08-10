@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <link rel="shortcut icon" type="image/png" href="images/asynctask-logo.png"/>
+    <meta name="theme-color" content="#f57f17" />
+    <title>Java HTTP - PaNickApps</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+<nav>
+    <div class="nav-wrapper lime"></div>
+</nav>
+
+<main>
+
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <br><br>
+            <h1 class="header center lime-text text-darken-2">Java HTTP</h1>
+            <div class="row center">
+                <img class="responsive-img" src="images/asynctask-logo.png" width="200" />
+            </div>
+            <div class="row center">
+                <h5 class="header col s12 light">A Java utility library that makes HTTP requests easier to work with.</h5>
+            </div>
+            <div class="row center">
+                <a href="" id="download-button" <!--TODO-->
+                   class="btn-large waves-effect waves-light lime darken-2">Download</a>
+            </div>
+
+            <p class="justify">
+                <!--TODO-->
+            </p>
+
+            <p><b>The package requires Java 8+</b></p>
+
+            <hr/>
+
+            <h4>Contents</h4>
+
+            <ul class="browser-default">
+                 <li><a href="#guide">Guide</a>
+                 <ul class="browser-default">
+                     <li><a href="#downloadAndImport">Download and import</a></li>
+                     <li><a href="#httpget">Making an HTTP GET request</a></li>
+                     <li><a href="#response">Getting the response</a></li>
+                     <li><a href="#httppost">Making an HTTP POST request</a></li>
+                 </ul>
+                 </li>
+                <li><a href="#example">Full example</a></li>
+                <li><a href="#documentation">Documentation</a></li>
+                <li><a href="#usage">License</a></li>
+                <li><a href="#bugreport">Bug reporting</a></li>
+            </ul>
+
+            <h4 id="guide">Guide</h4>
+
+            <h5 id="downloadAndImport">Download and import</h5>
+
+            <p>
+                You can download AsyncTask for plain Java <a href="https://github.com/panickapps/Java-AsyncTask/blob/master/Downloads/AsyncTask.jar">here</a>.
+                Then import it in your project as a Java library (.jar).
+            </p>
+
+            <h5 id="createAsyncTask">Creating an AsyncTask</h5>
+
+            <p>
+                AsyncTask for Java is a simplified port of the Android SDK's version of AsyncTask. While it is designed to
+                be very similar in use, it omits some functionality which is not frequently used. From this point, we are assuming
+                that you already known the basics of AsyncTask usage from the Android SDK. Otherwise, you can
+                <a href="https://alvinalexander.com/android/asynctask-examples-parameters-callbacks-executing-canceling">refer to this guide</a>
+                by Alvin Alexander to learn how it works.
+                You can use AsyncTask by creating a new class that extends the AsyncTask class:
+            </p>
+
+            <pre class="prettyprint java">
+public class MyAsyncTask extends AsyncTask&lt;Void, Void, Void&gt; {
+    ...
+}</pre>
+
+            <p>Note that the AsyncTask class takes three templated type arguments just like the Android AsyncTask, which are:</p>
+
+            <ul class="browser-default">
+                <li>Parameter type</li>
+                <li>Progress type</li>
+                <li>Result type</li>
+            </ul>
+
+            <h5 id="implementMethods">Implementing the methods</h5>
+
+            <p>You can freely define your own methods and attributes in any subclass you create. However, you MUST
+                implement the following three methods provided by the base class:</p>
+
+            <ul class="browser-default">
+                <li>onPreExecute()</li>
+                <li>doInBackground()</li>
+                <li>onPostExecute()</li>
+            </ul>
+
+            <h6 id="onpreexecute">onPreExecute()</h6>
+
+            <p>
+                The onPreExecute() method executes code <i>on the UI thread</i>. It is usually used to prepare workload for execution
+                while still being able to access the UI thread. An example would be URL sanitization, and initialization
+                of certain UI elements. The following code shows an example implementation of the onPreExecute() method that prints
+                a message on the console:
+            </p>
+
+            <pre class="prettyprint java">
+@Override
+protected void onPreExecute() {
+    System.out.println("OnPreExecute" + System.lineSeparator());
+}</pre>
+
+            <h6 id="doinbackground">doInBackground()</h6>
+
+            <p>
+                The doInBackground() method executes code <i>on a non-UI thread</i> - this is done to prevent the UI from
+            freezing during long operations such as database queries, HTTP calls or file reads. The code below shows an example where
+                numbers between 0 and 1,000,000 are printed on the screen - a long operation that would stall the application.
+                This method receives a set of parameters and returns a result.
+            </p>
+
+            <pre class="prettyprint java">
+@Override
+protected Void doInBackground(Void... voids) {
+    for (long i = 0; i < 1000000; i++) {
+        System.out.println(i + System.lineSeparator());
+    }
+    return null;
+}</pre>
+
+            <h6 id="onpostexecute">onPostExecute()</h6>
+
+            <p>
+                The onPostExecute() method executes code <i>on the UI thread</i> and receives the result of the doInBackground() method.
+            </p>
+
+            <pre class="prettyprint java">
+@Override
+protected void onPostExecute(Void aVoid) {
+    System.out.println("OnPostExecute" + System.lineSeparator());
+}</pre>
+
+            <h5 id="progressUpdates">Progress updates</h5>
+
+            <p>
+                You can update the progress indication on the UI while the task is running by using the methods <span class="code">publishProgress()</span>
+                and <span class="code">onProgressUpdate()</span>. The <span class="code">publishProgress()</span> method is used within doInBackground() to
+                publish a set of Progress objects. Calling this method automatically invokes <span class="code">onProgressUpdate()</span> on the UI thread,
+                which you need to implement. <span class="code">onProgressUpdate()</span> can be used to update the UI by using the progress provided by
+                <span class="code">publishProgress()</span>. The code below shows how to implement the <span class="code">onProgressUpdate() method </span>
+                and how to call the <span class="code">publishProgress()</span> in doInBackground():
+            </p>
+
+            <pre class="prettyprint">
+@Override
+protected void onProgressUpdate(Integer... integers) {
+    super.onProgressUpdate(integers);
+    System.out.println(integers[0] + System.lineSeparator());
+}
+
+...
+
+@Override
+protected Void doInBackground(Void... voids) {
+    for (long i = 0; i < 1000000; i++) {
+        stringBuilder.append("[" + name + "] -> " + i + System.lineSeparator());
+        if (i % 100000 == 0) {
+            <mark>publishProgress((int) i);</mark>
+        }
+    }
+    return null;
+}</pre>
+
+            <h4 id="example">Full example</h4>
+
+            <p>Please see the <a href="https://github.com/panickapps/Java-AsyncTask/tree/master/Source/Test/">complete example here.</a></p>
+
+            <h4 id="documentation">Documentation</h4>
+
+            <p>Visit the <a href="documentation">documentation.</a></p>
+
+            <h4 id="usage">License</h4>
+
+            <p>
+                AsyncTask for plain Java is released under the <a href="https://github.com/panickapps/Java-AsyncTask/blob/master/LICENSE">Apache 2.0 license</a>.
+            </p>
+
+            <h4 id="source">Source code</h4>
+
+            <p>
+                You can find the source code at the project's repository <a href="https://github.com/panickapps/Java-AsyncTask/">here</a>.
+            </p>
+
+            <h4 id="bugreport">Bug reporting</h4>
+
+            <p>Please report bugs <a href="mailto:panickapps@gmail.com?subject=AsyncTask for plain Java">here</a>.</p>
+
+            <br/><br/>
+        </div>
+    </div>
+
+</main>
+
+<footer class="page-footer purple darken-2">
+        <div class="container">
+            <div class="center light">Made by <a class="orange-text text-lighten-3" href="http://www.panickapps.com">PaNickApps</a></div>
+            <br/>
+        </div>
+</footer>
+
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+</body>
+</html>

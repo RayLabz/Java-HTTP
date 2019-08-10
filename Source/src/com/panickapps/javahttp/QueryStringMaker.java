@@ -5,6 +5,16 @@ import java.net.URLEncoder;
 import java.util.Map;
 
 /**
+ * Created by PaNickApps - 2019
+ * Visit http://www.panickapps.com
+ *
+ * Java-HTTP: A Java utility library that makes HTTP requests easier to work with.
+ * Java HTTP allows easy creation and execution of HTTP requests.
+ * Repository: https://github.com/panickapps/Java-HTTP
+ * Guide: https://panickapps.github.io/Java-HTTP
+ */
+
+/**
  * A utility class which creates query strings.
  */
 public class QueryStringMaker {

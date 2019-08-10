@@ -7,6 +7,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * Created by PaNickApps - 2019
+ * Visit http://www.panickapps.com
+ *
+ * Java-HTTP: A Java utility library that makes HTTP requests easier to work with.
+ * Java HTTP allows easy creation and execution of HTTP requests.
+ * Repository: https://github.com/panickapps/Java-HTTP
+ * Guide: https://panickapps.github.io/Java-HTTP
+ */
+
+/**
  * Models and performs an HTTP request.
  */
 public class HTTPRequest {
@@ -115,16 +125,6 @@ public class HTTPRequest {
         }
 
         /**
-         * Sets the parameter set of the request.
-         * @param params A HashMap of String->String
-         * @return Returns a builder object.
-         */
-        public Builder setParams(HashMap<String, String> params) {
-            this.params = params;
-            return this;
-        }
-
-        /**
          * Adds a String parameter to the request's parameter set.
          * @param paramName The parameter's name.
          * @param paramValue The parameter's value.
@@ -213,22 +213,12 @@ public class HTTPRequest {
         }
 
         /**
-         * Sets the request's properties (headers).
-         * @param requestProperties A HashMap of String->String of properties.
-         * @return Returns a builder object.
-         */
-        public Builder setRequestProperties(HashMap<String, String> requestProperties) {
-            this.requestProperties = requestProperties;
-            return this;
-        }
-
-        /**
          * Sets a single request property.
          * @param propertyKey The name of the header.
          * @param propertyValue The value of the header.
          * @return Returns a builder object.
          */
-        public Builder addRequestProperty(String propertyKey, String propertyValue) {
+        public Builder setRequestProperty(String propertyKey, String propertyValue) {
             requestProperties.put(propertyKey, propertyValue);
             return this;
         }

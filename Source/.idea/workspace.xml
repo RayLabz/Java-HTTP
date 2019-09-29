@@ -7,26 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a068063-4bfc-4b3c-8599-5594354b2965" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../Example/src/Example.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../docs/css/materialize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../docs/css/materialize.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../docs/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../docs/images/asynctask-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../docs/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../docs/js/init.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../docs/js/materialize.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../docs/js/materialize.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../docs/js/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/src/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/panickapps/javahttp/HTTPRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/panickapps/javahttp/HTTPRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/panickapps/javahttp/HTTPResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/panickapps/javahttp/HTTPResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/panickapps/javahttp/MimeType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/panickapps/javahttp/MimeType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/panickapps/javahttp/QueryStringMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/panickapps/javahttp/QueryStringMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/panickapps/javahttp/RequestMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/panickapps/javahttp/RequestMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,14 +23,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/panickapps/javahttp/HTTPRequest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
-              <caret line="149" column="66" lean-forward="true" selection-start-line="149" selection-start-column="66" selection-end-line="149" selection-end-column="66" />
+              <caret line="149" column="66" selection-start-line="149" selection-start-column="66" selection-end-line="149" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/panickapps/javahttp/QueryStringMaker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -80,9 +72,9 @@
         <option value="$PROJECT_DIR$/Test/src/Test.java" />
         <option value="$PROJECT_DIR$/src/com/panickapps/javahttp/HTTPResponse.java" />
         <option value="$PROJECT_DIR$/src/com/panickapps/javahttp/MimeType.java" />
-        <option value="$PROJECT_DIR$/src/com/panickapps/javahttp/QueryStringMaker.java" />
         <option value="$PROJECT_DIR$/src/com/panickapps/javahttp/RequestMethod.java" />
         <option value="$PROJECT_DIR$/src/com/panickapps/javahttp/HTTPRequest.java" />
+        <option value="$PROJECT_DIR$/src/com/panickapps/javahttp/QueryStringMaker.java" />
       </list>
     </option>
   </component>
@@ -242,17 +234,18 @@
       <workItem from="1565428027707" duration="733000" />
       <workItem from="1565429295633" duration="117000" />
       <workItem from="1565429999311" duration="41000" />
+      <workItem from="1569752611569" duration="42000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13211000" />
+    <option name="totallyTimeSpent" value="13253000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -336,13 +329,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/panickapps/javahttp/QueryStringMaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/panickapps/javahttp/RequestMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -354,10 +340,17 @@
     <entry file="file://$PROJECT_DIR$/src/com/panickapps/javahttp/HTTPRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
-          <caret line="149" column="66" lean-forward="true" selection-start-line="149" selection-start-column="66" selection-end-line="149" selection-end-column="66" />
+          <caret line="149" column="66" selection-start-line="149" selection-start-column="66" selection-end-line="149" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/panickapps/javahttp/QueryStringMaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
         </state>
       </provider>
     </entry>

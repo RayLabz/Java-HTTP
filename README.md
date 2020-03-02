@@ -5,23 +5,23 @@ The Java HTTP library simplifies the execution of HTTP requests in Java through 
 
 <b>The package requires Java 8+</b>
 
-[Download](https://github.com/panickapps/Java-HTTP/blob/master/Downloads/Java-HTTP.jar)
+[Download](https://github.com/raylabz/Java-HTTP/blob/master/Downloads/Java-HTTP.jar)
 
 ## Guide
 
-Visit our guide [here](https://panickapps.github.io/Java-HTTP/) to find code snippets and usage examples.
+Visit our guide [here](https://raylabz.github.io/Java-HTTP/) to find code snippets and usage examples.
 
 ## Full example
-Please see the [complete example here](https://github.com/panickapps/Java-HTTP/tree/master/Example).
+Please see the [complete example here](https://github.com/raylabz/Java-HTTP/tree/master/Example).
 
 ## Documentation
-Visit the [documentation](https://panickapps.github.io/Java-HTTP/documentation).
+Visit the [documentation](https://raylabz.github.io/Java-HTTP/documentation).
 
 ## License
-Java-HTTP is released under the [Apache 2.0 license](https://github.com/panickapps/Java-HTTP/blob/master/LICENSE).
+Java-HTTP is released under the [Apache 2.0 license](https://github.com/raylabz/Java-HTTP/blob/master/LICENSE).
 
 ## Source code
-You can find the source code at the project's repository [here](https://github.com/panickapps/Java-HTTP/).
+You can find the source code at the project's repository [here](https://github.com/raylabz/Java-HTTP/).
 
 ## Bug reporting
-Please report bugs [here](panickapps@gmail.com?subject=Java-HTTP).
+Please report bugs [here](raylabzg@gmail.com?subject=Java-HTTP).

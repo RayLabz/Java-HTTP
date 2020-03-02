@@ -8,6 +8,25 @@
   <component name="ChangeListManager">
     <list default="true" id="9a068063-4bfc-4b3c-8599-5594354b2965" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../docs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/documentation/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/allclasses-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/documentation/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/allclasses-noframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/documentation/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/documentation/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/documentation/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/documentation/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/documentation/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/index-files/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/documentation/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/index-files/index-11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/documentation/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/documentation/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/documentation/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/documentation/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/documentation/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/documentation/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/documentation/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/documentation/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/index-files/index-9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/documentation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/documentation/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/documentation/package-list" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/package-list" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -313,12 +332,12 @@
       <workItem from="1565429999311" duration="41000" />
       <workItem from="1569752611569" duration="323000" />
       <workItem from="1570529755198" duration="5000" />
-      <workItem from="1583168042782" duration="6933000" />
+      <workItem from="1583168042782" duration="7127000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20472000" />
+    <option name="totallyTimeSpent" value="20666000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />

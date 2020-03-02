@@ -1,0 +1,7 @@
+com\raylabz\javahttp\HTTPResponse.class
+com\raylabz\javahttp\HTTPRequest.class
+com\raylabz\javahttp\MimeType.class
+com\raylabz\javahttp\QueryStringMaker.class
+com\raylabz\javahttp\HTTPRequest$1.class
+com\raylabz\javahttp\HTTPRequest$Builder.class
+com\raylabz\javahttp\RequestMethod.class

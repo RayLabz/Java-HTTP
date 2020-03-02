@@ -1,13 +1,13 @@
-package com.panickapps.javahttp;
+package com.raylabz.javahttp;
 
 /**
- * Created by PaNickApps - 2019
- * Visit http://www.panickapps.com
+ * Created by RayLabz - 2019
+ * Visit http://www.RayLabz.com
  *
  * Java-HTTP: A Java utility library that makes HTTP requests easier to work with.
  * Java HTTP allows easy creation and execution of HTTP requests.
- * Repository: https://github.com/panickapps/Java-HTTP
- * Guide: https://panickapps.github.io/Java-HTTP
+ * Repository: https://github.com/RayLabz/Java-HTTP
+ * Guide: https://RayLabz.github.io/Java-HTTP
  */
 
 /**

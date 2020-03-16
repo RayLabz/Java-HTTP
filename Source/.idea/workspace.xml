@@ -7,26 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a068063-4bfc-4b3c-8599-5594354b2965" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../docs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/documentation/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/allclasses-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/documentation/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/allclasses-noframe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/documentation/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/documentation/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/documentation/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/documentation/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/documentation/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/index-files/index-10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/documentation/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/index-files/index-11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/documentation/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/documentation/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/documentation/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/documentation/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/index-files/index-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/documentation/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/index-files/index-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/documentation/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/documentation/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/index-files/index-8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/documentation/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/index-files/index-9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/documentation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/documentation/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/documentation/package-list" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/documentation/package-list" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/HTTPResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/HTTPResponse.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,10 +26,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/HTTPRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="96" column="29" selection-start-line="96" selection-start-column="29" selection-end-line="96" selection-end-column="29" />
+            <state relative-caret-position="17">
+              <caret line="221" column="53" selection-start-line="221" selection-start-column="53" selection-end-line="221" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/HTTPResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="447">
+              <caret line="50" column="50" lean-forward="true" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1203#1204#0" expanded="true" />
+                <element signature="e#1258#1259#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+            <state relative-caret-position="-119">
+              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -120,6 +116,7 @@
         <option value="$PROJECT_DIR$/src/com/raylabz/javahttp/QueryStringMaker.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/HTTPRequest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/HTTPResponse.java" />
       </list>
     </option>
   </component>
@@ -142,8 +139,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -333,16 +330,18 @@
       <workItem from="1569752611569" duration="323000" />
       <workItem from="1570529755198" duration="5000" />
       <workItem from="1583168042782" duration="7127000" />
+      <workItem from="1584390752558" duration="444000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20666000" />
+    <option name="totallyTimeSpent" value="21110000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26865673" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27132195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -353,19 +352,17 @@
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Flutter Performance" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32936078" />
       <window_info anchor="bottom" id="Application Servers" order="13" />
       <window_info anchor="bottom" id="Messages" order="14" />
-      <window_info anchor="right" id="Kubernetes Explorer" />
-      <window_info anchor="right" id="Google Cloud Storage" />
       <window_info anchor="right" id="Flutter Inspector" order="0" />
       <window_info anchor="right" id="Flutter Outline" order="1" />
       <window_info anchor="right" id="Maven" order="2" />
@@ -378,6 +375,8 @@
       <window_info anchor="right" id="Database" order="9" />
       <window_info anchor="right" id="Palette&#9;" order="10" />
       <window_info anchor="right" id="Maven Projects" order="11" />
+      <window_info anchor="right" id="Google Cloud Storage" order="12" />
+      <window_info anchor="right" id="Kubernetes Explorer" order="13" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,16 +410,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/panickapps/javahttp/JavaPostRequest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/HTTPResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/MimeType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -443,20 +432,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/HTTPRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="96" column="29" selection-start-line="96" selection-start-column="29" selection-end-line="96" selection-end-column="29" />
+        <state relative-caret-position="17">
+          <caret line="221" column="53" selection-start-line="221" selection-start-column="53" selection-end-line="221" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/HTTPResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        <state relative-caret-position="447">
+          <caret line="50" column="50" lean-forward="true" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1203#1204#0" expanded="true" />
+            <element signature="e#1258#1259#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -40,6 +40,14 @@ public class HTTPResponse {
     }
 
     /**
+     * Returns if the status of the response is successful (within 200-299 inclusive)
+     * @return status
+     */
+    public boolean isSuccess() {
+        return (status >= 200 && status <= 299);
+    }
+
+    /**
      * Returns the content (body) of the response.
      * @return content
      */

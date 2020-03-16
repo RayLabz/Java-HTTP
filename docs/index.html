@@ -58,6 +58,7 @@
                      <li><a href="#headers">Adding request headers</a></li>
                      <li><a href="#mime">MIME types</a></li>
                      <li><a href="#timeouts">Timeouts</a></li>
+                     <li><a href="#statusCheck">Status checks</a></li>
                  </ul>
                  </li>
                 <li><a href="#example">Full example</a></li>
@@ -70,10 +71,26 @@
 
             <h5 id="downloadAndImport">Download and import</h5>
 
+            <p>You can automatically import Java-HTTP in your project using Maven or Gradle:</p>
+
+            <p><b><u>Maven:</u></b></p>
+
+            <pre class="prettyprint">
+&lt;dependency&gt;
+  &lt;groupId&gt;com.raylabz&lt;/groupId&gt;
+  &lt;artifactId&gt;responz&lt;/artifactId&gt;
+  &lt;version&gt;1.0.2&lt;/version&gt;
+&lt;/dependency&gt;</pre>
+
+            <p><b><u>Gradle:</u></b></p>
+
+            <pre class="prettyprint">implementation 'com.raylabz:responz:1.0.2'</pre>
+
             <p>
-                You can download Java-HTTP <a href="https://github.com/RayLabz/Java-HTTP/raw/master/Downloads/Java-HTTP.jar">here</a>.
-                Then import it in your project as a Java library (.jar).
+                Alternatively, you can download Java-HTTP as a .jar library:
             </p>
+
+            <a class="btn lime black-text" href="https://github.com/RayLabz/Java-HTTP/raw/master/Downloads/Java-HTTP.jar">Download .jar</a>
 
             <h5 id="httpget">Making an HTTP GET request</h5>
 
@@ -153,6 +170,26 @@ HTTPResponse response = new HTTPRequest.Builder("http://www.example.com/api/endp
             <pre class="prettyprint">
 .setConnectTimeout(20000) //Set the connection timeout
 .setReadTimeout(15000) //Set the data read timeout</pre>
+
+            <h5 id="statusCheck">Status checks</h5>
+
+            <p class="justify">
+                You can quickly check if the status is successful by using the <span class="code">isSuccess()</span> method:
+            </p>
+
+            <pre class="prettyprint">
+if (response.isSuccess()) {
+    //TODO - Success, do something with the response.
+}
+else {
+    //TODO - Failure, show error message.
+}</pre>
+
+            <p class="justify">
+                Alternatively, you can also get the detailed HTTP status of the response by using the <span class="code">getStatus()</span> method:
+            </p>
+
+            <pre class="prettyprint">int status = response.getStatus();</pre>
 
             <h4 id="example">Full example</h4>
 

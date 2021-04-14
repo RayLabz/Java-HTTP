@@ -31,15 +31,15 @@
                 <h5 class="header col s12 light">A Java utility library that makes HTTP requests easier to work with.</h5>
             </div>
             <div class="row center">
-                <a href="https://oss.sonatype.org/service/local/repositories/releases/content/com/raylabz/java-http/1.0.2/java-http-1.0.2.jar" id="download-button"
+                <a href="https://oss.sonatype.org/service/local/repositories/releases/content/com/raylabz/java-http/2.0.0/java-http-2.0.0.jar" id="download-button"
                    class="btn-large waves-effect waves-light lime darken-2">Download</a>
             </div>
 
-            <p class="justify">
-                The Java HTTP library simplifies the execution of HTTP requests in Java through standardization. It allows you
-                to quickly build a request using a builder pattern, add parameters, execute the request and receive a response and its data.
-                While standardizing the aspects of HTTP requests, the library still maintains some versatility, allowing you to
-                a) define request headers and read response headers and b) define request timeouts.
+            <p class="center">
+                The Java-HTTP library simplifies the creation and execution of HTTP requests in Java. It allows you to quickly create a request,
+                add parameters, set content types, headers and more, execute it and handle the response and its data, both synchronously and
+                asynchronously. While standardizing some aspects of the HTTP lifecycle for improved usability, the library still allows for a
+                variety of options to be customized. Java-HTTP also supports the transmission of binary data over HTTP.
             </p>
 
             <p><b>The package requires Java 8+</b></p>
@@ -52,16 +52,19 @@
                  <li><a href="#guide">Guide</a>
                  <ul class="browser-default">
                      <li><a href="#downloadAndImport">Download and import</a></li>
-                     <li><a href="#httpget">Making an HTTP GET request</a></li>
-                     <li><a href="#response">Getting the response</a></li>
-                     <li><a href="#httppost">Making an HTTP POST request</a></li>
+                     <li><a href="#httpget">Making a simple HTTP GET request</a></li>
+                     <li><a href="#parameters">Adding parameters</a></li>
+                     <li><a href="#response">Handling the response</a></li>
+                     <li><a href="#httppost">Making a POST request</a></li>
                      <li><a href="#headers">Adding request headers</a></li>
-                     <li><a href="#mime">MIME types</a></li>
+                     <li><a href="#contentType">Content types</a></li>
                      <li><a href="#timeouts">Timeouts</a></li>
                      <li><a href="#statusCheck">Status checks</a></li>
+                     <li><a href="#asyncRequests">Asynchronous requests</a></li>
+                     <li><a href="#binaryRequests">Binary HTTP requests</a></li>
+                     <li><a href="#binaryResponses">Handling binary responses</a></li>
                  </ul>
                  </li>
-                <li><a href="#example">Full example</a></li>
                 <li><a href="#documentation">Documentation</a></li>
                 <li><a href="#usage">License</a></li>
                 <li><a href="#bugreport">Bug reporting</a></li>
@@ -79,121 +82,310 @@
 &lt;dependency&gt;
   &lt;groupId&gt;com.raylabz&lt;/groupId&gt;
   &lt;artifactId&gt;java-http&lt;/artifactId&gt;
-  &lt;version&gt;1.0.2&lt;/version&gt;
+  &lt;version&gt;2.0.0&lt;/version&gt;
 &lt;/dependency&gt;</pre>
 
             <p><b><u>Gradle:</u></b></p>
 
-            <pre class="prettyprint">implementation 'com.raylabz:java-http:1.0.2'</pre>
+            <pre class="prettyprint">implementation 'com.raylabz:java-http:2.0.0'</pre>
 
             <p>
                 Alternatively, you can download Java-HTTP as a .jar library:
             </p>
 
-            <a class="btn lime black-text" href="https://oss.sonatype.org/service/local/repositories/releases/content/com/raylabz/java-http/1.0.2/java-http-1.0.2.jar">Download .jar</a>
+            <a class="btn lime black-text" href="https://oss.sonatype.org/service/local/repositories/releases/content/com/raylabz/java-http/2.0.0/java-http-2.0.0.jar">Download .jar</a>
 
             <h5 id="httpget">Making an HTTP GET request</h5>
 
             <p>
-                You can make a GET request, add parameters, execute it and receive the response by simply using:
+                Java-HTTP allows you to make a simple GET request using:
             </p>
 
             <pre class="prettyprint java">
-HTTPResponse response = new HTTPRequest.Builder("http://www.example.com/api/endpoint", RequestMethod.GET)
-    .addParam("myParam", "myValue") //Add parameter(s)
-    .build() //Build the request
-    .call(); //Make the call</pre>
+BasicHTTPRequest.create("http://google.com", RequestMethod.GET) //Specify the URL and request method
+        .build() //Build the request
+        .sendAndWait(); //Send the request and wait for a response</pre>
 
-            <h5 id="response">Getting the response</h5>
+            <h5 id="parameters">Adding parameters</h5>
 
-            <p>You can get the response data of a call by using the response object:</p>
+            <p>
+                You can add parameters to your requests using the <span class="code">addParam()</span> method, which supports various data types.
+                This method expects the parameter name, and the value of the parameter.
+            </p>
 
             <pre class="prettyprint java">
-//Get the response data:
-System.out.println("Response code: " + response.getStatus()); //Fetch the response code/status
-System.out.println("Response content: " + response.getContent()); //Fetch the response content (body)
-System.out.println("Response header field 'Content-Type': " + response.getHeaderField("Content-Type").get(0));</pre>
+BasicHTTPRequest.create("http://google.com", RequestMethod.GET)
+        .addParam("intParam", 1) //Add an integer parameter
+        .addParam("doubleParam", 3.14) //Add a double parameter
+        .addParam("floatParam", 3.14f) //Add a float parameter
+        .addParam("stringParam", "hello") //Add a String parameter
+        .addParam("charParam", 'c') //Add a character parameter
+        .addParam("booleanParam", true) //Add a boolean parameter
+        .addParam("longParam", System.currentTimeMillis()) //Add a long parameter
+        .addParam("shortParam", (short) 123) //Add a short parameter
+        .build()
+        .sendAndWait();</pre>
+
+            <div class="info-panel light-blue lighten-3">
+                Parameter values for basic HTTP requests are implicitly converted into Strings when transmitted over HTTP.
+                To transmit using other types of data consider using <a class="black-text" href="#binaryRequests"><u>Binary HTTP requests</u></a>.
+            </div>
+
+            <br/><br/>
+
+            <h5 id="response">Handling the response</h5>
+
+            <p>
+                You can specify what happens when the response is received using the <span class="code">onSuccess()</span> method and a lambda expression.
+                The <span class="code">response</span> object gives us access to important response information, such as the
+                status, content and headers of the response.
+            </p>
+
+            <pre class="prettyprint java">
+BasicHTTPRequest.create("http://google.com", RequestMethod.GET)
+        .onSuccess(response -> {
+            System.out.println("Response received successfully"); //Print a message
+            int status = response.getStatus(); //Get the status
+            String body = response.getContent(); //Get the content
+            List&lt;String&gt; keepAlive = response.getHeaderField("Keep-Alive"); //Get meta-data by name (headers)
+        })
+        .build()
+        .sendAndWait();</pre>
+
+            <p class="justify">
+                You can also specify what will happen when an error occurs during the execution of the request using the <span class="code">onFailure()</span> method.
+                This is different from the response status, as it indicates that an error has occurred on the <b>client-side</b> rather than on the server-side.
+                Similar to <span class="code">onSuccess()</span>, the <span class="code">onFailure()</span> method can be defined using a lambda expression:
+            </p>
+
+            <pre class="prettyprint java">
+BasicHTTPRequest.create("http://google.com", RequestMethod.GET)
+        .onFailure(error -> {
+            error.printStackTrace();
+        })
+        .build()
+        .sendAndWait();</pre>
+
+            <br/>
+
+            <div class="info-panel light-blue lighten-3">
+                If the <span class="code">onSuccess()</span> and <span class="code">onFailure()</span> methods are not used, debug information will
+                be printed instead in the console output.
+            </div>
+
+            <br/>
+
+            <div class="info-panel light-blue lighten-3">
+                Requests sent using the <span class="code">sendAndWait()</span> method will block the execution of a program until the response is received.
+                To avoid this (and execute code concurrently), see <a class="black-text" href="#asyncRequests"><u>asynchronous requests</u></a>.
+            </div>
+
+            <br/>
+
+            <div class="info-panel light-blue lighten-3">
+                HTTP GET requests can only support up to 2,048 characters as part of their query string, thus limiting the amount
+                of data which can be sent. The use of GET is suitable only for a limited number of parameters and mostly
+                for retrieving data rather than sending data to the server. For unlimited data sizes and sending data to an endpoint,
+                use the POST method instead.
+            </div>
+
+            <br/><br/>
+            <hr/>
 
             <h5 id="httppost">Making an HTTP POST request</h5>
 
             <p>
-                Alternatively, you can also make and execute a POST request, simply by changing the RequestMethod:
+                You can create and send a POST request or any other type of HTTP request (i.e. DELETE, PUT etc.) by changing the
+                request method when creating a BasicHTTPRequest:
             </p>
 
             <pre class="prettyprint">
-//Perform a POST HTTP request:
-HTTPResponse response2 = new HTTPRequest.Builder("http://www.example.com/api/endpoint", <mark>RequestMethod.POST</mark>)
-    .addParam("myParam", "myValue") //Add parameter(s)
-    .build() //Build the request
-    .call(); //Make the call</pre>
+//POST request:
+BasicHTTPRequest.create("http://google.com", RequestMethod.POST)
+        .build()
+        .sendAndWait();</pre>
+
+            <pre class="prettyprint">
+//PUT request:
+BasicHTTPRequest.create("http://google.com", RequestMethod.PUT)
+        .build()
+        .sendAndWait();</pre>
 
             <h5 id="headers">Defining request headers</h5>
 
             <p>
-                You can define a header for your request using the <span class="code">setRequestProperty()</span> method:
+                You can define a header in your request using the <span class="code">setRequestProperty()</span> method:
             </p>
 
             <pre class="prettyprint">
-HTTPResponse response = new HTTPRequest.Builder("http://www.example.com/api/endpoint", RequestMethod.GET)
-    .addParam("myParam", "myValue") //Add parameter(s)
-    <mark>.setRequestProperty("User-Agent", "Java")</mark>
-    .build() //Build the request
-    .call(); //Make the call</pre>
+BasicHTTPRequest.create("http://google.com", RequestMethod.GET)
+        .setRequestProperty("User-Agent", "Java") //Set the 'User-Agent' header
+        .build()
+        .sendAndWait();</pre>
 
-            <h5 id="mime">MIME types</h5>
+            <h5 id="contentType">Content type</h5>
 
             <p>
-                You can quickly define a frequently used MIME type for your request using the <span class="code">setMimeType()</span> method:
+                You can define the content type for your request using the <span class="code">setContentType()</span> method:
             </p>
 
             <pre class="prettyprint">
-HTTPResponse response = new HTTPRequest.Builder("http://www.example.com/api/endpoint", RequestMethod.GET)
-    .addParam("myParam", "myValue") //Add parameter(s)
-    <mark>.setMimeType(MimeType.CONTENT_TYPE_JSON)</mark>
-    .build() //Build the request
-    .call(); //Make the call</pre>
+BasicHTTPRequest.create("http://google.com", RequestMethod.GET)
+        .setContentType(ContentType.CONTENT_TYPE_JSON)
+        .build()
+        .sendAndWait();</pre>
 
             <p>
-                Alternatively, if the MIME type you want does not exist as a MimeType, you can use the <span class="code">setCustomMimeType()</span> method
-                to set the type as a string:
+                Alternatively, if you want to provide a custom content type, you can use the <span class="code">setContentType()</span> method
+                and provide a string-based representation of the type:
             </p>
 
-            <pre class="prettyprint">.setCustomMimeType("text/*")</pre>
+            <pre class="prettyprint">
+BasicHTTPRequest.create("http://google.com", RequestMethod.GET)
+        .setContentType("text/*")
+        .build()
+        .sendAndWait();</pre>
 
             <h5 id="timeouts">Timeouts</h5>
 
             <p>
-                You can define the connection timeout and data read timeout limits using the <span class="code">setConnectTimeout()</span> and
+                You can define the connection timeout and data read timeout limits (in <i>milliseconds</i>) using the <span class="code">setConnectTimeout()</span> and
                 <span class="code">setReadTimeout()</span> methods:
             </p>
 
             <pre class="prettyprint">
-.setConnectTimeout(20000) //Set the connection timeout
-.setReadTimeout(15000) //Set the data read timeout</pre>
+BasicHTTPRequest.create("http://google.com", RequestMethod.GET)
+        .setConnectTimeout(20000) //Set the connection timeout
+        .setReadTimeout(15000) //Set the read data timeout
+        .build()
+        .sendAndWait();</pre>
 
-            <h5 id="statusCheck">Status checks</h5>
+            <h5 id="statusCheck">Response status checks</h5>
 
             <p class="justify">
                 You can quickly check if the status is successful by using the <span class="code">isSuccess()</span> method:
             </p>
 
             <pre class="prettyprint">
-if (response.isSuccess()) {
-    //TODO - Success, do something with the response.
-}
-else {
-    //TODO - Failure, show error message.
-}</pre>
+BasicHTTPRequest.create("http://google.com", RequestMethod.GET)
+        .onSuccess(response -> {
+            if (response.isSuccess()) {
+                //TODO - Success!
+            }
+            else {
+                //TODO - Failed to connect :(
+            }
+        })
+        .build()
+        .sendAndWait();</pre>
+
+            <br/>
+
+            <hr/>
+
+            <h5 id="asyncRequests">Asynchronous requests</h5>
 
             <p class="justify">
-                Alternatively, you can also get the detailed HTTP status of the response by using the <span class="code">getStatus()</span> method:
+                An asynchronous request is a request which does not block the execution of the program, allowing other code to be executed
+                concurrently with the request. Asynchronous requests can be made by using the <span class="code">send()</span> method
+                instead of <span class="code">sendAndWait()</span>.
             </p>
 
-            <pre class="prettyprint">int status = response.getStatus();</pre>
+            <pre class="prettyprint">
+BasicHTTPRequest.create("http://google.com", RequestMethod.GET)
+        .build()
+        .send(); //Send the request and continue executing other code</pre>
 
-            <h4 id="example">Full example</h4>
+            <br/><hr/>
 
-            <p>Please see the <a href="https://github.com/RayLabz/Java-HTTP/tree/master/Example">complete example here.</a></p>
+            <h5 id="binaryRequests">Binary requests</h5>
+
+            <p class="justify">
+                Java-HTTP allows you to easily create and send HTTP requests involving binary data. Binary requests and responses
+                are ideal for sending larger chunks of data such as multimedia or documents, and communicating more efficiently.
+                Binary requests send binary data and will always return binary responses, in raw bytes. They can be created using the <span class="code">BinaryHTTPRequest</span> class:
+            </p>
+
+            <pre class="prettyprint">
+BinaryHTTPRequest.create("http://localhost:8080/binaryEndpoint")
+        .build()
+        .sendAndWait();</pre>
+
+            <p class="justify">
+                You can put data into the request body using the following methods, which accept primitive types:
+            </p>
+
+            <pre class="prettyprint">
+BinaryHTTPRequest.create("http://localhost:8080/binaryEndpoint")
+        .putInt(1) //Put an integer
+        .putShort((short) 1) //Put a short
+        .putLong(System.currentTimeMillis()) //Put a long
+        .putFloat(1.3f) //Put a float
+        .putDouble(3.14) //Put a double
+        .putChar('c') //Put a character
+        .putString("hello") //Put a string
+        .putBoolean(true) //Put a boolean
+        .putByte((byte) 112) //Put a byte
+        .putBytes(new byte[10]) //Put an array of bytes
+        .build()
+        .sendAndWait();</pre>
+
+            <div class="info-panel light-blue lighten-3">
+                To serialize and communicate more complex objects over HTTP consider using Google's <a class="black-text" href="https://developers.google.com/protocol-buffers"><u>Protocol Buffers</u></a>.
+            </div>
+
+            <br/>
+
+            <p class="justify">
+                You can also use the same properties and methods as in simple HTTP requests:
+            </p>
+
+            <pre class="prettyprint">
+BinaryHTTPRequest.create("http://localhost:8080/binaryEndpoint")
+        .onSuccess(response -> {
+            if (response.isSuccess()) {
+                //...
+            }
+        })
+        .onFailure(error -> {
+            error.printStackTrace();
+        })
+        .setConnectTimeout(10000)
+        .setReadTimeout(15000)
+        .setRequestProperty("User-Agent", "Java")
+        .build()
+        .send();</pre>
+
+            <h5 id="binaryResponses">Handling binary responses</h5>
+
+            <p class="justify">
+                Binary responses can be handled using the <span class="code">onSuccess()</span> method. Their content
+                is in raw bytes, but the following methods can allow you to read primitive data types:
+            </p>
+
+            <pre class="prettyprint">
+BinaryHTTPRequest.create("http://localhost:8080/binaryEndpoint")
+        .onSuccess(response -> {
+            if (response.isSuccess()) {
+                int i = response.readInt();
+                long l = response.readLong();
+                short s = response.readShort();
+                float f = response.readFloat();
+                double d = response.readDouble();
+                char c = response.readChar();
+                String str = response.readString();
+                boolean b = response.readBoolean();
+                byte b1 = response.readByte();
+            }
+        })
+        .build()
+        .sendAndWait();</pre>
+
+            <div class="info-panel red lighten-3">
+                <b>Important: </b>Data from a binary response can only be read once and must therefore be stored in variables for later use.
+            </div>
+
+            <br/><hr/>
 
             <h4 id="documentation">Documentation</h4>
 

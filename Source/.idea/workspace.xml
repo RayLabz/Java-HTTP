@@ -5,14 +5,72 @@
       <artifact name="Java-HTTP:jar" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9a068063-4bfc-4b3c-8599-5594354b2965" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/BasicHTTPRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/BasicHTTPResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/BinaryHTTPRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/BinaryHTTPResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/OnFailureListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/OnSuccessListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/HTTPTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/HTTPRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/HTTPRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/HTTPResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/HTTPResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/MimeType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/ContentType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/allclasses-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/allclasses-noframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/HTTPRequest.Builder.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/HTTPRequest.Builder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/HTTPRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/HTTPRequest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/HTTPResponse.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/HTTPResponse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/MimeType.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/MimeType.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/QueryStringMaker.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/QueryStringMaker.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/RequestMethod.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/RequestMethod.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/class-use/HTTPRequest.Builder.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/class-use/HTTPRequest.Builder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/class-use/HTTPRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/class-use/HTTPRequest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/class-use/HTTPResponse.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/class-use/HTTPResponse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/class-use/MimeType.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/class-use/MimeType.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/class-use/QueryStringMaker.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/class-use/QueryStringMaker.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/class-use/RequestMethod.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/class-use/RequestMethod.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/index-all.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/index-all.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/java-http-1.0.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/java-http-1.0.1-javadoc.jar.asc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/java-http-1.0.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/java-http-1.0.1-sources.jar.asc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/java-http-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/java-http-1.0.1.jar.asc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/java-http-1.0.1.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/java-http-1.0.1.pom.asc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2/.index" beforeDir="false" afterPath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2/.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2/com/raylabz/java-http/1.0.1/java-http-1.0.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2/com/raylabz/java-http/1.0.1/java-http-1.0.1-javadoc.jar.asc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2/com/raylabz/java-http/1.0.1/java-http-1.0.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2/com/raylabz/java-http/1.0.1/java-http-1.0.1-sources.jar.asc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2/com/raylabz/java-http/1.0.1/java-http-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2/com/raylabz/java-http/1.0.1/java-http-1.0.1.jar.asc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2/com/raylabz/java-http/1.0.1/java-http-1.0.1.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2/com/raylabz/java-http/1.0.1/java-http-1.0.1.pom.asc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2/com/raylabz/java-http/maven-metadata-nexus.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2/com/raylabz/java-http/maven-metadata-nexus.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/.idea/workspace.xml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,66 +79,10 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/HTTPRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="221" column="53" selection-start-line="221" selection-start-column="53" selection-end-line="221" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/HTTPResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="50" column="50" lean-forward="true" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1203#1204#0" expanded="true" />
-                <element signature="e#1258#1259#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/QueryStringMaker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/RequestMethod.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-119">
-              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -93,6 +95,8 @@
       <find>panickapps</find>
       <find>return a</find>
       <find>staging</find>
+      <find>get</find>
+      <find>getstatus</find>
     </findStrings>
     <replaceStrings>
       <replace>RayLabz</replace>
@@ -100,6 +104,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -115,16 +127,9 @@
         <option value="$PROJECT_DIR$/src/com/panickapps/javahttp/QueryStringMaker.java" />
         <option value="$PROJECT_DIR$/src/com/raylabz/javahttp/QueryStringMaker.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/HTTPRequest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/HTTPResponse.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
-    </option>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -133,6 +138,7 @@
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
+  <component name="ProjectId" id="1r4FUM74ai1RSxrpDZZopYcPwC3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -203,10 +209,15 @@
       </pane>
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.google.cloudcode.ide_session_index" value="20210415_0001" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -228,33 +239,11 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\hfnov\Desktop\Projects\Java-HTTP\Source\src\com\panickapps\javahttp" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.raylabz.javahttp" />
+    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.HTTPTest">
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="Test" />
       <option name="VM_PARAMETERS" />
@@ -302,6 +291,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HTTPTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HTTPTest" />
+      <module name="Java-HTTP" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="Java-HTTP" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -311,7 +340,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HTTPTest" />
+        <item itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -330,12 +366,13 @@
       <workItem from="1569752611569" duration="323000" />
       <workItem from="1570529755198" duration="5000" />
       <workItem from="1583168042782" duration="7127000" />
-      <workItem from="1584390752558" duration="444000" />
+      <workItem from="1584390752558" duration="1716000" />
+      <workItem from="1618227471655" duration="23278000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21110000" />
+    <option name="totallyTimeSpent" value="22382000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -352,13 +389,13 @@
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Flutter Performance" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32936078" />
       <window_info anchor="bottom" id="Application Servers" order="13" />
@@ -434,15 +471,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
+        <state relative-caret-position="17">
           <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/HTTPRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="221" column="53" selection-start-line="221" selection-start-column="53" selection-end-line="221" selection-end-column="53" />
+        <state relative-caret-position="207">
+          <caret line="251" column="40" selection-start-line="251" selection-start-column="40" selection-end-line="251" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -451,8 +488,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/HTTPResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="50" column="50" lean-forward="true" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+        <state relative-caret-position="173">
+          <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1203#1204#0" expanded="true" />

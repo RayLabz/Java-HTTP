@@ -23,7 +23,7 @@ public class QueryStringMaker {
      * Creates a query string given a map of parameters.
      * @param params The set of parameters to convert into a query string.
      * @return Returns a query-formatted String.
-     * @throws UnsupportedEncodingException
+     * @throws UnsupportedEncodingException when an encoding is not supported.
      */
     public static String makeQueryString(Map<String, String> params) throws UnsupportedEncodingException {
         StringBuilder result = new StringBuilder();

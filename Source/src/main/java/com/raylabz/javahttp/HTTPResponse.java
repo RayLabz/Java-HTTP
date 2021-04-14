@@ -3,21 +3,11 @@ package com.raylabz.javahttp;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by RayLabz - 2019
- * Visit http://www.RayLabz.com
- *
- * Java-HTTP: A Java utility library that makes HTTP requests easier to work with.
- * Java HTTP allows easy creation and execution of HTTP requests.
- * Repository: https://github.com/RayLabz/Java-HTTP
- * Guide: https://RayLabz.github.io/Java-HTTP
- */
+public abstract class HTTPResponse<ContentType> {
 
-public class HTTPResponse {
-
-    private final int status;
-    private final String content;
-    private final Map<String, List<String>> headerFields;
+    protected final int status;
+    protected final ContentType content;
+    protected final Map<String, List<String>> headerFields;
 
     /**
      * Creates an HTTPResponse object.
@@ -25,7 +15,7 @@ public class HTTPResponse {
      * @param content The content (body) of the response.
      * @param headerFields A map of response headers.
      */
-    public HTTPResponse(int status, String content, Map<String, List<String>> headerFields) {
+    public HTTPResponse(int status, ContentType content, Map<String, List<String>> headerFields) {
         this.status = status;
         this.content = content;
         this.headerFields = headerFields;
@@ -51,7 +41,7 @@ public class HTTPResponse {
      * Returns the content (body) of the response.
      * @return content
      */
-    public String getContent() {
+    public ContentType getContent() {
         return content;
     }
 

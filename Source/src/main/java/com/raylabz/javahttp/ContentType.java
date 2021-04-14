@@ -13,10 +13,11 @@ package com.raylabz.javahttp;
 /**
  * Enumerates commonly used MIME types.
  */
-public enum MimeType {
+public enum ContentType {
 
     CONTENT_TYPE_JSON("application/json"),
     CONTENT_TYPE_URL_ENCODED("application/x-www-form-urlencoded"),
+    CONTENT_TYPE_BYTES("application/octet-stream"),
     CONTENT_TYPE_TEXT("text/plain"),
     CONTENT_TYPE_STREAM("application/xml"),
     CONTENT_TYPE_BMP("image/bmp"),
@@ -37,7 +38,7 @@ public enum MimeType {
      * Constructs a MimeType object.
      * @param text The textual representation of the MimeType (Visit: https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Complete_list_of_MIME_types)
      */
-    MimeType(String text) {
+    ContentType(String text) {
         this.text = text;
     }
 

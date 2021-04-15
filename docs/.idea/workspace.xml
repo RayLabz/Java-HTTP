@@ -1,69 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34d8b195-52ea-474c-a666-d8d912d16f57" name="Default Changelist" comment="v2">
-      <change beforePath="$PROJECT_DIR$/../Source/src/main/java/com/raylabz/javahttp/BinaryHTTPResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/src/main/java/com/raylabz/javahttp/BinaryHTTPResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/src/test/java/HTTPTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/src/test/java/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/apidocs/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/target/apidocs/allclasses-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/apidocs/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/target/apidocs/allclasses-noframe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/HTTPRequest.Builder.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/HTTPRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/HTTPRequest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/HTTPResponse.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/HTTPResponse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/MimeType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/QueryStringMaker.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/QueryStringMaker.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/RequestMethod.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/RequestMethod.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/class-use/HTTPRequest.Builder.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/class-use/HTTPRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/class-use/HTTPRequest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/class-use/HTTPResponse.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/class-use/HTTPResponse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/class-use/MimeType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/class-use/QueryStringMaker.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/class-use/QueryStringMaker.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/class-use/RequestMethod.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/class-use/RequestMethod.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/package-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/target/apidocs/com/raylabz/javahttp/package-use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/apidocs/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/target/apidocs/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/apidocs/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/target/apidocs/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/apidocs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/target/apidocs/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/apidocs/index-all.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/target/apidocs/index-all.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/apidocs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/target/apidocs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/apidocs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/target/apidocs/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/nexus-staging/staging/316776b98fcef2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/target/nexus-staging/staging/316776b98fcef2.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/nexus-staging/staging/316776b98fcef2/.index" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/target/nexus-staging/staging/316776b98fcef2/.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Source/target/nexus-staging/staging/316776b98fcef2/com/raylabz/java-http/maven-metadata-nexus.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Source/target/nexus-staging/staging/316776b98fcef2/com/raylabz/java-http/maven-metadata-nexus.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/allclasses-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/allclasses-noframe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/com/raylabz/javahttp/HTTPRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/com/raylabz/javahttp/HTTPRequest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/com/raylabz/javahttp/HTTPResponse.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/com/raylabz/javahttp/HTTPResponse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/com/raylabz/javahttp/QueryStringMaker.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/com/raylabz/javahttp/QueryStringMaker.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/com/raylabz/javahttp/RequestMethod.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/com/raylabz/javahttp/RequestMethod.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/com/raylabz/javahttp/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/com/raylabz/javahttp/package-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/com/raylabz/javahttp/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/com/raylabz/javahttp/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/com/raylabz/javahttp/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/com/raylabz/javahttp/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="34d8b195-52ea-474c-a666-d8d912d16f57" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,7 +70,7 @@
       <workItem from="1584391309026" duration="1156000" />
       <workItem from="1584392679856" duration="268000" />
       <workItem from="1589662066893" duration="147000" />
-      <workItem from="1618415319993" duration="11303000" />
+      <workItem from="1618415319993" duration="11348000" />
     </task>
     <task id="LOCAL-00001" summary="v2">
       <created>1618440384264</created>
@@ -141,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618440384264</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="docs update">
+      <created>1618474472647</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1618474472647</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,21 +94,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="v2" />
+    <MESSAGE value="docs update" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs update" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="577" y="88" key="CommitChangelistDialog2" timestamp="1618474191037">
+    <state x="577" y="88" key="CommitChangelistDialog2" timestamp="1618474467824">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="577" y="88" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1618474191037" />
+    <state x="577" y="88" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1618474467824" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1618430464791">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1618430464791" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1618440386828">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1618474476132">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1618440386828" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1618474476132" />
     <state x="2873" y="0" width="974" height="1087" key="dock-window-1" timestamp="1618434043912">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>

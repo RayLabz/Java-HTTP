@@ -339,7 +339,7 @@ public class BinaryHTTPRequest extends HTTPRequest<BinaryHTTPResponse> {
             long latency = (System.currentTimeMillis() - sendTime);
             successListener.onSuccess(new BinaryHTTPResponse(statusCode, data, con.getHeaderFields(), latency));
 
-        } catch (IOException e) {
+        } catch (Exception e) {
             failureListener.onFailure(e);
         }
     }

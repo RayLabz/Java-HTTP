@@ -344,7 +344,7 @@ public class BasicHTTPRequest extends HTTPRequest<BasicHTTPResponse> {
             long latency = (System.currentTimeMillis() - sendTime);
             successListener.onSuccess(new BasicHTTPResponse(statusCode, content.toString(), con.getHeaderFields(), latency));
 
-        } catch (IOException e) {
+        } catch (Exception e) {
             failureListener.onFailure(e);
         }
     }

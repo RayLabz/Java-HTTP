@@ -21,9 +21,10 @@ public class BasicHTTPResponse extends HTTPResponse<String> {
      * @param status       The status of the report (e.g. 200, 203, 400 etc).
      * @param content      The content (body) of the response.
      * @param headerFields A map of response headers.
+     * @param latency The latency of the request-response cycle.
      */
-    public BasicHTTPResponse(int status, String content, Map<String, List<String>> headerFields) {
-        super(status, content, headerFields);
+    public BasicHTTPResponse(int status, String content, Map<String, List<String>> headerFields, long latency) {
+        super(status, content, headerFields, latency);
     }
 
 }

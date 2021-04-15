@@ -318,6 +318,7 @@ public class BinaryHTTPRequest extends HTTPRequest<BinaryHTTPResponse> {
             //Write the data
             con.getOutputStream().write(data);
             con.getOutputStream().flush();
+            final long sendTime = System.currentTimeMillis();
             con.getOutputStream().close();
 
             int statusCode = con.getResponseCode();
@@ -335,7 +336,8 @@ public class BinaryHTTPRequest extends HTTPRequest<BinaryHTTPResponse> {
             bos.close();
             final byte[] data = bos.toByteArray();
 
-            successListener.onSuccess(new BinaryHTTPResponse(statusCode, data, con.getHeaderFields()));
+            long latency = (System.currentTimeMillis() - sendTime);
+            successListener.onSuccess(new BinaryHTTPResponse(statusCode, data, con.getHeaderFields(), latency));
 
         } catch (IOException e) {
             failureListener.onFailure(e);

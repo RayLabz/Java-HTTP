@@ -8,17 +8,20 @@ public abstract class HTTPResponse<ContentType> {
     protected final int status;
     protected final ContentType content;
     protected final Map<String, List<String>> headerFields;
+    private final long latency;
 
     /**
      * Creates an HTTPResponse object.
      * @param status The status of the report (e.g. 200, 203, 400 etc).
      * @param content The content (body) of the response.
      * @param headerFields A map of response headers.
+     * @param latency The latency of the request-response cycle.
      */
-    public HTTPResponse(int status, ContentType content, Map<String, List<String>> headerFields) {
+    public HTTPResponse(int status, ContentType content, Map<String, List<String>> headerFields, long latency) {
         this.status = status;
         this.content = content;
         this.headerFields = headerFields;
+        this.latency = latency;
     }
 
     /**
@@ -43,6 +46,15 @@ public abstract class HTTPResponse<ContentType> {
      */
     public ContentType getContent() {
         return content;
+    }
+
+    /**
+     * Gets the latency of this response.
+     * The latency is defined as the time taken to send and process a request and receive the response.
+     * @return Returns a long
+     */
+    public long getLatency() {
+        return latency;
     }
 
     /**

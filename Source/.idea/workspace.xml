@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_TEST_SOURCES" value="false" />
+  </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="Java-HTTP:jar" />
@@ -9,67 +12,14 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a068063-4bfc-4b3c-8599-5594354b2965" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/BasicHTTPRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/BasicHTTPResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/BinaryHTTPRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/BinaryHTTPResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/OnFailureListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/OnSuccessListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/HTTPTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="9a068063-4bfc-4b3c-8599-5594354b2965" name="Default" comment="v2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/HTTPRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/HTTPRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/BasicHTTPRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/BasicHTTPRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/BasicHTTPResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/BasicHTTPResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/BinaryHTTPRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/BinaryHTTPRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/BinaryHTTPResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/BinaryHTTPResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/HTTPResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/HTTPResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/MimeType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raylabz/javahttp/ContentType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/allclasses-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/allclasses-noframe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/HTTPRequest.Builder.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/HTTPRequest.Builder.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/HTTPRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/HTTPRequest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/HTTPResponse.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/HTTPResponse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/MimeType.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/MimeType.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/QueryStringMaker.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/QueryStringMaker.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/RequestMethod.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/RequestMethod.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/class-use/HTTPRequest.Builder.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/class-use/HTTPRequest.Builder.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/class-use/HTTPRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/class-use/HTTPRequest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/class-use/HTTPResponse.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/class-use/HTTPResponse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/class-use/MimeType.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/class-use/MimeType.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/class-use/QueryStringMaker.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/class-use/QueryStringMaker.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/class-use/RequestMethod.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/class-use/RequestMethod.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/package-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/raylabz/javahttp/package-use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/index-all.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/index-all.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/apidocs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-http-1.0.1-javadoc.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-http-1.0.1-javadoc.jar.asc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-http-1.0.1-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-http-1.0.1-sources.jar.asc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-http-1.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-http-1.0.1.jar.asc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-http-1.0.1.pom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-http-1.0.1.pom.asc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2/.index" beforeDir="false" afterPath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2/.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2/com/raylabz/java-http/1.0.1/java-http-1.0.1-javadoc.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2/com/raylabz/java-http/1.0.1/java-http-1.0.1-javadoc.jar.asc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2/com/raylabz/java-http/1.0.1/java-http-1.0.1-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2/com/raylabz/java-http/1.0.1/java-http-1.0.1-sources.jar.asc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2/com/raylabz/java-http/1.0.1/java-http-1.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2/com/raylabz/java-http/1.0.1/java-http-1.0.1.jar.asc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2/com/raylabz/java-http/1.0.1/java-http-1.0.1.pom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2/com/raylabz/java-http/1.0.1/java-http-1.0.1.pom.asc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2/com/raylabz/java-http/maven-metadata-nexus.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/nexus-staging/staging/316776b98fcef2/com/raylabz/java-http/maven-metadata-nexus.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HTTPTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HTTPTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +167,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.google.cloudcode.ide_session_index" value="20210415_0001" />
+    <property name="com.google.cloudcode.ide_session_index" value="20210415_0002" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -367,8 +317,16 @@
       <workItem from="1570529755198" duration="5000" />
       <workItem from="1583168042782" duration="7127000" />
       <workItem from="1584390752558" duration="1716000" />
-      <workItem from="1618227471655" duration="23278000" />
+      <workItem from="1618227471655" duration="26933000" />
     </task>
+    <task id="LOCAL-00001" summary="v2">
+      <created>1618440332669</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1618440332669</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -418,6 +376,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="v2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/panickapps/javahttp/HTTPAsyncTask.java" />

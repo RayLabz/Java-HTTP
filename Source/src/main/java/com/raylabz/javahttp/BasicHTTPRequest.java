@@ -312,11 +312,16 @@ public class BasicHTTPRequest extends HTTPRequest<BasicHTTPResponse> {
                 con.setRequestProperty(entry.getKey(), entry.getValue());
             }
 
+            final long sendTime;
             if (requestMethod == RequestMethod.POST) {
                 DataOutputStream out = new DataOutputStream(con.getOutputStream());
                 out.writeBytes(QueryStringMaker.makeQueryString(params));
                 out.flush();
+                sendTime = System.currentTimeMillis();
                 out.close();
+            }
+            else {
+                sendTime = System.currentTimeMillis();
             }
 
             int statusCode = con.getResponseCode();
@@ -336,7 +341,8 @@ public class BasicHTTPRequest extends HTTPRequest<BasicHTTPResponse> {
             }
             in.close();
 
-            successListener.onSuccess(new BasicHTTPResponse(statusCode, content.toString(), con.getHeaderFields()));
+            long latency = (System.currentTimeMillis() - sendTime);
+            successListener.onSuccess(new BasicHTTPResponse(statusCode, content.toString(), con.getHeaderFields(), latency));
 
         } catch (IOException e) {
             failureListener.onFailure(e);

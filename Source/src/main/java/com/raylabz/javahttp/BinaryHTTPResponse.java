@@ -28,9 +28,10 @@ public class BinaryHTTPResponse extends HTTPResponse<byte[]> {
      * @param status       The status of the report (e.g. 200, 203, 400 etc).
      * @param content      The content (body) of the response.
      * @param headerFields A map of response headers.
+     * @param latency The latency of the request-response cycle.
      */
-    public BinaryHTTPResponse(int status, byte[] content, Map<String, List<String>> headerFields) {
-        super(status, content, headerFields);
+    public BinaryHTTPResponse(int status, byte[] content, Map<String, List<String>> headerFields, long latency) {
+        super(status, content, headerFields, latency);
         inputStream = new DataInputStream(new ByteArrayInputStream(content));
     }
 

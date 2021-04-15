@@ -63,6 +63,7 @@
                      <li><a href="#asyncRequests">Asynchronous requests</a></li>
                      <li><a href="#binaryRequests">Binary HTTP requests</a></li>
                      <li><a href="#binaryResponses">Handling binary responses</a></li>
+                     <li><a href="#latency">Latency</a></li>
                  </ul>
                  </li>
                 <li><a href="#documentation">Documentation</a></li>
@@ -385,6 +386,39 @@ BinaryHTTPRequest.create("http://localhost:8080/binaryEndpoint")
                 <b>Important: </b>Data from a binary response can only be read once and must therefore be stored in variables for later use.
             </div>
 
+            <br/>
+
+            <p class="justify">
+                It is also possible to get the entire body of the response using <span class="code">response.getContent()</span>.
+            </p>
+
+            <pre class="prettyprint">
+BinaryHTTPRequest.create("http://localhost:8080/binaryEndpoint")
+        .onSuccess(response -> {
+            if (response.isSuccess()) {
+                final byte[] data = response.getContent();
+            }
+        })
+        .build()
+        .sendAndWait();</pre>
+
+            <br/><hr/>
+
+            <h5 id="latency">Latency</h5>
+
+            <p class="justify">
+                It is also possible to get the latency of a request-response cycle using the <span class="code">response.getLatency()</span> method,
+                which returns the latency in <i>milliseconds</i>:
+            </p>
+
+            <pre class="prettyprint">
+BasicHTTPRequest.create("http://google.com", RequestMethod.GET)
+        .onSuccess(response -> {
+            long latency = response.getLatency();
+        })
+        .build()
+        .sendAndWait();</pre>
+
             <br/><hr/>
 
             <h4 id="documentation">Documentation</h4>
@@ -415,7 +449,7 @@ BinaryHTTPRequest.create("http://localhost:8080/binaryEndpoint")
 
 <footer class="page-footer lime">
         <div class="container">
-            <div class="center light">Made by <a class="black-text" href="http://www.RayLabz.com">RayLabz</a></div>
+            <div class="center light black-text">Made by <a class="black-text" href="http://www.RayLabz.com"><u>RayLabz</u></a></div>
             <br/>
         </div>
 </footer>
